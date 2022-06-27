@@ -8,14 +8,14 @@ body{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
+
 }
 
 h1 {
   font-family: 'Montserrat-black, sans-serif';
   font-size: 3.5rem;
   line-height: 1.5;
-  font-weight: 900;
 }
 
 h2{
@@ -62,33 +62,36 @@ p{
 
 /* Tittle Images */
 
-.tittle-image{
-  width: 60%;
+.title-image{
+  position: absolute;
+  width: 25%;
   transform: rotate(25deg);
+  right: 25%;
+
+}
+
+/* Futures Section */
+
+#features{
+  padding: 7% 15%;
+  background-color: #FFF;
+  position: relative;
+}
+
+.feature-box{
+  text-align: center;
+  padding: 5%;
 }
 
 /* Icon Hover */
 .icon {
   color: #ef8172;
   margin-bottom: 1rem;
-
 }
 
 
 .icon:hover{
   color: #ff4c68;
-}
-
-
-/* Futures Section */
-
-#features{
-  padding: 7% 15%;
-}
-
-.feature-box{
-  text-align: center;
-  padding: 5%;
 }
 
 /* Testimonial Section */
@@ -98,6 +101,8 @@ p{
   text-align: center;
   background-color: #ef8172;
   color: #fff;
+
+
 }
 
 .testimonial-image {
@@ -114,9 +119,60 @@ p{
   background-color: #ef8172;
   text-align: center;
   padding-bottom: 3%;
+
 }
 
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+/* section cta */
+
+#cta{
+  background-color: #ff4c68;
+  font-family: "Montserrat-black";
+  text-align: center;
+  padding: 7% 15%;
+
+}
+.cta-font{
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+/* section footer */
+
+#footer{
+  background-color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+
+@media (max-width: 1028px) {
+
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
 }
